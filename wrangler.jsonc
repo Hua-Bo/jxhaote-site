@@ -1,11 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
 
-  // 嘉兴浩天化工独立站 — 部署到 www.jxhaote.cn
   "name": "jxhaote-site",
-
   "main": "workers/api.ts",
   "compatibility_date": "2026-07-22",
+
+  // 保留 workers.dev 访问地址，自定义域生效后两者并存
+  "workers_dev": true,
+
+  // 自定义域名：需先将 jxhaote.cn 添加到 Cloudflare 并修改 NS
+  "routes": [
+    { "pattern": "www.jxhaote.cn", "custom_domain": true, "zone_name": "jxhaote.cn" },
+    { "pattern": "jxhaote.cn", "custom_domain": true, "zone_name": "jxhaote.cn" }
+  ],
 
   "assets": {
     "directory": "./dist",
