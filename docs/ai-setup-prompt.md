@@ -157,11 +157,21 @@ npm run dev
 - 确认终端输出包含 `http://localhost:3000`（若 3000 端口被占用，改用 `npx vite --port 3001` 并告知我）  
 - 请我用浏览器打开对应地址，首页应显示 **Jiaxing Haotian Chemical** 外贸站
 
-### 任务 7：教会我如何修改网站并推送上线
+### 任务 7：教会我用 WorkBuddy 改代码、预览、推送上线
 
-请用通俗中文向我说明以下内容（必须输出）：
+**重要：我以后不用 Cursor / VS Code，所有改代码都在 WorkBuddy 里完成。** 请用通俗中文说明下面流程，并给我几个「对 WorkBuddy 怎么说」的例句。
 
-#### 常改文件
+#### 我怎么改网站（全程靠 WorkBuddy）
+
+1. 打开 WorkBuddy → 新建任务 → **「代码开发」**
+2. 用中文告诉 WorkBuddy 要改什么（不用自己打开文件、不用写代码）
+3. **由 WorkBuddy 直接修改项目文件并保存**（不是只告诉我改哪一行）
+4. 改完后 WorkBuddy 执行 `npm run dev`，我用浏览器打开 localhost 看效果
+5. 确认无误后，对 WorkBuddy 说「push 上线」，由它执行 `git add` → `commit` → `push`
+
+日常改代码可打开项目里的 **`docs/workbuddy-daily.md`**，在文末写上本次要改的内容，**全选该文件粘贴给 WorkBuddy**。
+
+#### 常改文件（告诉 WorkBuddy 改这些路径）
 
 | 要改的内容 | 文件路径 |
 |------------|----------|
@@ -173,16 +183,19 @@ npm run dev
 
 改文案时，中 / 英 / 越三个语言文件通常要一起改。
 
-#### 每次改完并上线的标准流程
+#### 对 WorkBuddy 怎么说（例句，必须输出给我）
+
+- 改文案：「请把 `src/data/i18n/zh.ts` 首页标题改成：……，英文和越南文对应文件一起改。」
+- 改产品：「请修改 `src/data/products.ts` 里 MEA 的 MOQ 为……」
+- 开工预览：「在 jxhaote-site 里 git pull，然后 npm run dev。」
+- 确认上线：「我看过 localhost 没问题了，请 git add、commit 写：更新了首页文案，然后 push 到 main。」
+
+#### 推送上线流程（由 WorkBuddy 执行）
 
 ```powershell
 cd "$HOME\Projects\jxhaote-site"
 git pull origin main
-```
-
-（我在编辑器或 WorkBuddy 中修改并保存文件）
-
-```powershell
+# WorkBuddy 按我的要求修改并保存文件
 git status
 git add .
 git commit -m "用中文写清楚本次改了什么"
@@ -194,16 +207,6 @@ git push origin main
 - **push 成功后无需我做其他操作**，GitHub 会自动构建并部署  
 - 等待 **2～5 分钟** 后，打开 https://www.jxhaote.cn 并按 **Ctrl + F5** 强制刷新查看线上效果  
 - 部署是否成功可到 https://github.com/Hua-Bo/jxhaote-site/actions 查看（绿色为成功）
-
-#### 以后每天开工（仅本地预览、不上线）
-
-对 WorkBuddy 说，或执行：
-
-```powershell
-cd "$HOME\Projects\jxhaote-site"
-git pull origin main
-npm run dev
-```
 
 ### 任务 8：输出最终报告
 
@@ -241,15 +244,16 @@ C:\Users\<我的用户名>\Projects\jxhaote-site
 【每天开工 — 对 WorkBuddy 说】
 「在 jxhaote-site 项目里执行 git pull，然后 npm run dev，告诉我本地预览地址。」
 
-【改网站内容】
-· 中文文案：src/data/i18n/zh.ts
-· 英文文案：src/data/i18n/en.ts
-· 越南文文案：src/data/i18n/vi.ts
-· 产品信息：src/data/products.ts
-· PDF 资料：放到 public/downloads/
+【改内容 + 本地预览 — 日常用这个文件】
+1. 打开项目里的 docs/workbuddy-daily.md
+2. 在最下面「我要改的内容」用中文写好要改什么
+3. Ctrl+A 全选 → 粘贴到 WorkBuddy「代码开发」任务 → 发送
+4. 用 Edge 打开 WorkBuddy 给的 http://localhost:3000 看效果（它会帮你自动打开）
+5. 还要改：在同一任务里继续说，保存后浏览器会自动刷新
+6. 满意后再说「push 上线」
 
-【改完要上线 — 对 WorkBuddy 说】
-「在 jxhaote-site 里先 git pull，然后 git add .，commit 说明写：本次改了什么，再 git push origin main。」
+【只想先看看网站、不改内容】
+对 WorkBuddy 说：「在 jxhaote-site 里 git pull，npm run dev，用浏览器打开 localhost:3000，告诉我各页面链接。」
 
 【看线上是否更新】
 1. 等 2～5 分钟

@@ -11,6 +11,12 @@
 > 这是嘉兴浩天化工的外贸展示网站（www.jxhaote.cn），用 Vue 3 编写。  
 > 代码仓库：https://github.com/Hua-Bo/jxhaote-site
 
+> **你用 WorkBuddy 改代码？** 日常请读：**`docs/workbuddy-使用手册.md`**（每次怎么运行、预览、修改、更新，都写在里面）  
+> 喂给 AI 的任务书：  
+> - **首次配环境：** `docs/ai-setup-prompt.md`（整份复制给 WorkBuddy）  
+> - **改内容 + 预览：** `docs/workbuddy-daily.md`（写好需求后整份复制）  
+> 本文档供想了解原理时阅读，不必全部看完。
+
 ---
 
 ## 目录
@@ -34,10 +40,10 @@
 | 电脑 | Mac 或 Windows 均可 |
 | 网络 | 能访问 GitHub（首次安装依赖需要） |
 | GitHub 账号 | 向管理员申请加入仓库 `Hua-Bo/jxhaote-site` 的协作权限 |
-| 编辑器 | 推荐 [Cursor](https://cursor.com/) 或 [VS Code](https://code.visualstudio.com/) |
-| 终端 | Mac 自带「终端」；Windows 推荐用「PowerShell」或 Git 自带的「Git Bash」 |
+| 改代码工具 | **[WorkBuddy](https://www.workbuddy.cn/)**（用中文描述要改什么，由 AI 改文件） |
+| 终端 | 一般由 WorkBuddy 自动执行；手动时用 PowerShell |
 
-**不需要**提前会写代码，只要会复制粘贴命令、会用编辑器打开文件即可。
+**不需要**提前会写代码。用 WorkBuddy 时：**用中文说清要改什么即可**，不必自己打开代码文件。
 
 ---
 

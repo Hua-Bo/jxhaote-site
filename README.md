@@ -20,6 +20,16 @@ npm run dev
 
 访问 http://localhost:3000
 
+## 同事用 WorkBuddy 维护网站
+
+请阅读 **[docs/workbuddy-使用手册.md](./docs/workbuddy-使用手册.md)**（每次运行、预览、修改、更新）。
+
+| 文档 | 用途 |
+|------|------|
+| [workbuddy-使用手册.md](./docs/workbuddy-使用手册.md) | 日常操作说明（给她看） |
+| [ai-setup-prompt.md](./docs/ai-setup-prompt.md) | 首次环境配置（整份喂给 WorkBuddy） |
+| [workbuddy-daily.md](./docs/workbuddy-daily.md) | 改内容任务书（写好需求后喂给 WorkBuddy） |
+
 ## 环境变量
 
 | 变量 | 说明 |
