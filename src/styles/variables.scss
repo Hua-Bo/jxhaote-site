@@ -1,0 +1,44 @@
+// 嘉兴浩天化工独立站 — 工业蓝灰主题
+
+// 主色
+$primary-color: #1e4d8c;
+$primary-light: #2d6cb5;
+$primary-dark: #153a6b;
+
+// 中性色
+$text-primary: #1e293b;
+$text-secondary: #64748b;
+$text-muted: #94a3b8;
+$bg-page: #f8fafc;
+$bg-card: #ffffff;
+$border-color: #e2e8f0;
+
+// 功能色
+$success-color: #16a34a;
+$whatsapp-color: #25d366;
+
+// 布局
+$header-height: 64px;
+$container-max: 1200px;
+$section-padding: 80px;
+
+// 响应式断点
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+// 层级
+$z-index-header: 100;
+$z-index-float: 200;
+
+// 过渡
+$transition-base: all 0.25s ease;
+
+// 圆角
+$border-radius-base: 6px;
+$border-radius-lg: 12px;
+
+// 阴影
+$box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$box-shadow-md: 0 4px 16px rgba(30, 77, 140, 0.08);
+$box-shadow-lg: 0 8px 32px rgba(30, 77, 140, 0.12);

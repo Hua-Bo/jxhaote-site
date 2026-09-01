@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // 嘉兴浩天化工独立站 — 部署到 www.jxhaote.cn
+  "name": "jxhaote-site",
+
+  "main": "workers/api.ts",
+  "compatibility_date": "2026-07-22",
+
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  }
+}

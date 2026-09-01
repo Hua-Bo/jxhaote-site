@@ -1,0 +1,94 @@
+@use './reset.scss';
+@use './variables.scss';
+
+#app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+// 通用容器
+.container {
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// 通用区块
+.section {
+  padding: $section-padding 0;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 48px 0;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-size: 1.05rem;
+    color: $text-secondary;
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+}
+
+// 按钮
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: $border-radius-base;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: $transition-base;
+
+  &--primary {
+    background: $primary-color;
+    color: #fff;
+
+    &:hover {
+      background: $primary-light;
+    }
+  }
+
+  &--outline {
+    border: 2px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+
+  &--whatsapp {
+    background: $whatsapp-color;
+    color: #fff;
+
+    &:hover {
+      filter: brightness(1.08);
+    }
+  }
+}
+
+// 卡片
+.card {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  padding: 24px;
+  transition: $transition-base;
+
+  &:hover {
+    box-shadow: $box-shadow-md;
+    border-color: transparent;
+  }
+}
