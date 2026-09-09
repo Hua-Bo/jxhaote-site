@@ -24,6 +24,13 @@ export default defineConfig(({ mode }) => {
     server: {
       host: '0.0.0.0', // 允许局域网访问
       port: 3000,
+      // 本地联调询盘接口：另开终端运行 `npx wrangler dev`（默认 8787）
+      proxy: {
+        '/api': {
+          target: 'http://127.0.0.1:8787',
+          changeOrigin: true,
+        },
+      },
     },
     preview: {
       host: '0.0.0.0',

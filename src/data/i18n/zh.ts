@@ -102,7 +102,9 @@ const zh: I18nMessages = {
     formProduct: '感兴趣的产品',
     formMessage: '留言',
     formSubmit: '发送询盘',
+    formSending: '发送中…',
     formSuccess: '感谢提交！我们会尽快与您联系。',
+    formError: '发送失败，请稍后重试，或直接通过 WhatsApp / 邮箱联系我们。',
   },
   footer: {
     company: '嘉兴浩天化工有限公司',

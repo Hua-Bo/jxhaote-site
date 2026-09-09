@@ -2,7 +2,7 @@ import type { I18nMessages } from '@/types/i18n'
 
 const en: I18nMessages = {
   meta: {
-    siteName: 'Jiaxing Haotian Chemical',
+    siteName: 'Jiaxing Haote Chemical',
     tagline: 'Your trusted chemical supplier for global trade',
   },
   nav: {
@@ -15,7 +15,7 @@ const en: I18nMessages = {
   home: {
     heroTitle: 'Quality Chemicals for Global Buyers',
     heroSubtitle:
-      'Jiaxing Haotian supplies ethanolamines, PEG, polyether monomers and surfactants. We work with R&D partners and production plants to serve buyers in India, Canada, Uzbekistan, South Africa and beyond.',
+      'Jiaxing Haote supplies ethanolamines, PEG, polyether monomers and surfactants. We work with R&D partners and production plants to serve buyers in India, Canada, Uzbekistan, South Africa and beyond.',
     heroCta: 'Browse Products',
     heroSecondary: 'Chat on WhatsApp',
     productsTitle: 'Product Categories',
@@ -36,9 +36,9 @@ const en: I18nMessages = {
     ],
   },
   about: {
-    title: 'About Jiaxing Haotian',
+    title: 'About Jiaxing Haote',
     intro:
-      'Jiaxing Haotian Chemical is a supplier based in Zhejiang, China. We partner with R&D centers and manufacturing plants to deliver consistent quality to overseas buyers. We focus on B2B trade — no online checkout, just reliable supply and fast communication.',
+      'Jiaxing Haote Chemical is a supplier based in Zhejiang, China. We partner with R&D centers and manufacturing plants to deliver consistent quality to overseas buyers. We focus on B2B trade — no online checkout, just reliable supply and fast communication.',
     advantagesTitle: 'Our Service Advantages',
     advantages: [
       {
@@ -59,7 +59,7 @@ const en: I18nMessages = {
       },
     ],
     compliance:
-      'Jiaxing Haotian is the supplier. Production is carried out at partner R&D bases and manufacturing facilities under agreed quality standards.',
+      'Jiaxing Haote is the supplier. Production is carried out at partner R&D bases and manufacturing facilities under agreed quality standards.',
   },
   products: {
     title: 'Products',
@@ -102,10 +102,12 @@ const en: I18nMessages = {
     formProduct: 'Product of interest',
     formMessage: 'Message',
     formSubmit: 'Send inquiry',
+    formSending: 'Sending…',
     formSuccess: 'Thank you! We will contact you shortly.',
+    formError: 'Failed to send. Please try again, or reach us via WhatsApp / email.',
   },
   footer: {
-    company: 'Jiaxing Haotian Chemical Co., Ltd.',
+    company: 'Jiaxing Haote Chemical Co., Ltd.',
     rights: 'All rights reserved.',
     supplierNote: 'Supplier with partner R&D and production facilities',
   },

@@ -2,7 +2,7 @@ import type { I18nMessages } from '@/types/i18n'
 
 const vi: I18nMessages = {
   meta: {
-    siteName: 'Jiaxing Haotian Chemical',
+    siteName: 'Jiaxing Haote Chemical',
     tagline: 'Nhà cung cấp hóa chất đáng tin cậy cho thương mại toàn cầu',
   },
   nav: {
@@ -15,7 +15,7 @@ const vi: I18nMessages = {
   home: {
     heroTitle: 'Hóa chất chất lượng cho người mua toàn cầu',
     heroSubtitle:
-      'Jiaxing Haotian cung cấp ethanolamine, PEG, đơn thể polyether và surfactant. Chúng tôi hợp tác với đối tác R&D và nhà máy sản xuất, phục vụ thị trường Ấn Độ, Canada, Uzbekistan, Nam Phi và nhiều nơi khác.',
+      'Jiaxing Haote cung cấp ethanolamine, PEG, đơn thể polyether và surfactant. Chúng tôi hợp tác với đối tác R&D và nhà máy sản xuất, phục vụ thị trường Ấn Độ, Canada, Uzbekistan, Nam Phi và nhiều nơi khác.',
     heroCta: 'Xem sản phẩm',
     heroSecondary: 'Chat WhatsApp',
     productsTitle: 'Danh mục sản phẩm',
@@ -36,9 +36,9 @@ const vi: I18nMessages = {
     ],
   },
   about: {
-    title: 'Về Jiaxing Haotian',
+    title: 'Về Jiaxing Haote',
     intro:
-      'Jiaxing Haotian Chemical là nhà cung cấp tại Chiết Giang, Trung Quốc. Chúng tôi hợp tác với trung tâm R&D và nhà máy để giao hàng ổn định cho khách hàng nước ngoài. Tập trung B2B — không thanh toán online, chỉ cung ứng đáng tin và liên lạc nhanh.',
+      'Jiaxing Haote Chemical là nhà cung cấp tại Chiết Giang, Trung Quốc. Chúng tôi hợp tác với trung tâm R&D và nhà máy để giao hàng ổn định cho khách hàng nước ngoài. Tập trung B2B — không thanh toán online, chỉ cung ứng đáng tin và liên lạc nhanh.',
     advantagesTitle: 'Ưu điểm dịch vụ',
     advantages: [
       {
@@ -59,7 +59,7 @@ const vi: I18nMessages = {
       },
     ],
     compliance:
-      'Jiaxing Haotian là nhà cung cấp. Sản xuất tại cơ sở R&D và nhà máy đối tác theo tiêu chuẩn chất lượng đã thỏa thuận.',
+      'Jiaxing Haote là nhà cung cấp. Sản xuất tại cơ sở R&D và nhà máy đối tác theo tiêu chuẩn chất lượng đã thỏa thuận.',
   },
   products: {
     title: 'Sản phẩm',
@@ -102,10 +102,12 @@ const vi: I18nMessages = {
     formProduct: 'Sản phẩm quan tâm',
     formMessage: 'Nội dung',
     formSubmit: 'Gửi yêu cầu',
+    formSending: 'Đang gửi…',
     formSuccess: 'Cảm ơn! Chúng tôi sẽ liên hệ sớm.',
+    formError: 'Gửi thất bại. Vui lòng thử lại hoặc liên hệ qua WhatsApp / email.',
   },
   footer: {
-    company: 'Jiaxing Haotian Chemical Co., Ltd.',
+    company: 'Jiaxing Haote Chemical Co., Ltd.',
     rights: 'Bảo lưu mọi quyền.',
     supplierNote: 'Nhà cung cấp với đối tác R&D và sản xuất',
   },

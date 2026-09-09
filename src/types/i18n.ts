@@ -69,7 +69,9 @@ export interface I18nMessages {
     formProduct: string
     formMessage: string
     formSubmit: string
+    formSending: string
     formSuccess: string
+    formError: string
   }
   footer: {
     company: string

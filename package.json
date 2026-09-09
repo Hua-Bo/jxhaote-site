@@ -1,7 +1,7 @@
 {
   "name": "jxhaote-site",
   "version": "1.0.0",
-  "description": "嘉兴浩天化工外贸独立站 — Jiaxing Haotian Chemical B2B showcase site (www.jxhaote.cn)",
+  "description": "嘉兴浩天化工外贸独立站 — Jiaxing Haote Chemical B2B showcase site (www.jxhaote.cn)",
   "private": true,
   "type": "module",
   "engines": {

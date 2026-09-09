@@ -155,7 +155,7 @@ npm run dev
 ```
 
 - 确认终端输出包含 `http://localhost:3000`（若 3000 端口被占用，改用 `npx vite --port 3001` 并告知我）  
-- 请我用浏览器打开对应地址，首页应显示 **Jiaxing Haotian Chemical** 外贸站
+- 请我用浏览器打开对应地址，首页应显示 **Jiaxing Haote Chemical** 外贸站
 
 ### 任务 7：教会我用 WorkBuddy 改代码、预览、推送上线
 
