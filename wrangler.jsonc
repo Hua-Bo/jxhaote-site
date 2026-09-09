@@ -23,9 +23,10 @@
 
   // 询盘邮件配置（RESEND_API_KEY 用 secret，不要写进仓库）
   // 配置命令：npx wrangler secret put RESEND_API_KEY
-  // 未验证 jxhaote.cn 域名时，发到 @jxhaote.cn 可能被 Resend 拒绝
+  // 未验证 jxhaote.cn 时：优先 ht13 失败 → 自动改发 CONTACT_FALLBACK_EMAIL
   "vars": {
     "CONTACT_TO_EMAIL": "ht13@jxhaote.cn",
+    "CONTACT_FALLBACK_EMAIL": "huabo19990706@gmail.com",
     "CONTACT_FROM_EMAIL": "Jiaxing Haote <onboarding@resend.dev>"
   }
 }
