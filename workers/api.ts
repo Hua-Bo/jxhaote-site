@@ -129,7 +129,7 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
 
   const primaryTo = env.CONTACT_TO_EMAIL || 'ht13@jxhaote.cn'
   const fallbackTo = env.CONTACT_FALLBACK_EMAIL || 'huabo19990706@gmail.com'
-  const from = env.CONTACT_FROM_EMAIL || 'Jiaxing Haote <onboarding@resend.dev>'
+  const from = env.CONTACT_FROM_EMAIL || 'Jiaxing Haote <noreply@jxhaote.cn>'
   const subject = `网站询盘：${name}${product ? ` — ${product}` : ''}`
 
   const buildBodies = (note?: string) => {
