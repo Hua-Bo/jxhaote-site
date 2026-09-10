@@ -20,7 +20,7 @@ npm run dev
 
 访问 http://localhost:3000
 
-询盘表单会提交到 `/api/contact`，由 Worker 发信到 `info@jxhaote.cn`。配置说明见 [docs/contact-form-setup.md](./docs/contact-form-setup.md)。
+询盘表单会提交到 `/api/contact`，由 Worker 发信到 `ht13@jxhaote.cn`。配置说明见 [docs/contact-form-setup.md](./docs/contact-form-setup.md)。
 
 ## 同事用 WorkBuddy 维护网站
 

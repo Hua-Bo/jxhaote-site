@@ -1,11 +1,11 @@
 # 询盘表单自动发信配置
 
-客户在「联系我们」提交表单后，由 Cloudflare Worker 调用 **Resend**，自动发邮件到 **`info@jxhaote.cn`**，不再依赖客户本机邮箱软件。
+客户在「联系我们」提交表单后，由 Cloudflare Worker 调用 **Resend**，自动发邮件到 **`ht13@jxhaote.cn`**，不再依赖客户本机邮箱软件。
 
 ## 工作原理
 
 ```
-客户填表 → POST /api/contact → Cloudflare Worker → Resend → info@jxhaote.cn
+客户填表 → POST /api/contact → Cloudflare Worker → Resend → ht13@jxhaote.cn
                                               ↖ Reply-To = 客户邮箱（你可直接回复）
 ```
 
@@ -34,7 +34,7 @@ npx wrangler secret put RESEND_API_KEY
 
 ### 3.（推荐）验证发信域名
 
-未验证域名时，发件人只能是 `onboarding@resend.dev`，且 **收件人往往只能是你在 Resend 注册的那个邮箱**，不能随意发到 `info@jxhaote.cn`。
+未验证域名时，发件人只能是 `onboarding@resend.dev`，且 **收件人往往只能是你在 Resend 注册的那个邮箱**，不能随意发到 `ht13@jxhaote.cn`。
 
 要真正发到公司邮箱，请在 Resend：
 
@@ -44,7 +44,7 @@ npx wrangler secret put RESEND_API_KEY
 
 ```jsonc
 "vars": {
-  "CONTACT_TO_EMAIL": "info@jxhaote.cn",
+  "CONTACT_TO_EMAIL": "ht13@jxhaote.cn",
   "CONTACT_FROM_EMAIL": "Jiaxing Haote <noreply@jxhaote.cn>"
 }
 ```
@@ -57,7 +57,7 @@ npm run cf:deploy
 
 ### 4. 确认收件邮箱可用
 
-确保 `info@jxhaote.cn` 已开通，且你能登录查收（企业邮箱 / 腾讯企业邮 / 转发到个人邮箱均可）。
+确保 `ht13@jxhaote.cn` 已开通，且你能登录查收（企业邮箱 / 腾讯企业邮 / 转发到个人邮箱均可）。
 
 ## 验证是否生效
 
@@ -71,7 +71,7 @@ curl -X POST https://www.jxhaote.cn/api/contact \
   -d '{"name":"Test","email":"you@example.com","company":"Demo","product":"MEA","message":"hello"}'
 ```
 
-然后查 `info@jxhaote.cn` 收件箱（含垃圾箱）。
+然后查 `ht13@jxhaote.cn` 收件箱（含垃圾箱）。
 
 ## 本地开发联调
 
@@ -96,7 +96,7 @@ Vite 已把 `/api` 代理到 `8787`，本地表单可联调。
 
 ```env
 RESEND_API_KEY=re_xxxxxxxx
-CONTACT_TO_EMAIL=info@jxhaote.cn
+CONTACT_TO_EMAIL=ht13@jxhaote.cn
 CONTACT_FROM_EMAIL=Jiaxing Haote <onboarding@resend.dev>
 ```
 

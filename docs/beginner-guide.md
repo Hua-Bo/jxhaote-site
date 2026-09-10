@@ -317,7 +317,7 @@ home: {
 
 ```env
 VITE_WHATSAPP=8618767352698
-VITE_CONTACT_EMAIL=info@jxhaote.cn
+VITE_CONTACT_EMAIL=ht13@jxhaote.cn
 ```
 
 方式二：直接改 `src/config/site.ts` 里的默认值。

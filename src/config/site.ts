@@ -3,7 +3,7 @@ export const WHATSAPP_NUMBER =
   import.meta.env.VITE_WHATSAPP || '8618767352698'
 
 export const CONTACT_EMAIL =
-  import.meta.env.VITE_CONTACT_EMAIL || 'info@jxhaote.cn'
+  import.meta.env.VITE_CONTACT_EMAIL || 'ht13@jxhaote.cn'
 
 export const SITE_URL =
   import.meta.env.VITE_SITE_URL || 'https://www.jxhaote.cn'

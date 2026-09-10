@@ -82,7 +82,7 @@ async function handleSubmit() {
           </p>
         </div>
 
-        <!-- 邮箱表单：提交到 Worker /api/contact，自动发信到 info@jxhaote.cn -->
+        <!-- 邮箱表单：提交到 Worker /api/contact，自动发信到 ht13@jxhaote.cn -->
         <form class="card contact__form" @submit.prevent="handleSubmit">
           <h2>{{ t.contact.email }}</h2>
 

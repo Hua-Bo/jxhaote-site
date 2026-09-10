@@ -145,7 +145,7 @@
 ```
 
 ```text
-请把联系邮箱改成 info@jxhaote.cn（改 .env.development 或 site.ts）。改完打开联系页面让我看。
+请把联系邮箱改成 ht13@jxhaote.cn（改 .env.development 或 site.ts）。改完打开联系页面让我看。
 ```
 
 ### 方式 B：用任务书（改的内容较多时）
